@@ -80,13 +80,13 @@
 </head>
 <body x-data="{
     imageUrl:'https://picsum.photos/id/237/400/300'
-}"
-@keyup.escape.window="imageUrl = null" >
+}" >
     <h1>Galerie</h1>
 <p>lorem⇥</p>
 <div class="overlay"
     x-show="imageUrl"
-    @click="imageUrl=null">
+    @click="imageUrl=null"
+    @keyup.escape.window="imageUrl = null">
     <figure>
         <img :src="imageUrl" alt="image 237... un chiot"
             @click="imageUrl= 'https://picsum.photos/id/237/400/300'">
