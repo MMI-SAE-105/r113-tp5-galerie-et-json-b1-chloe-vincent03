@@ -87,7 +87,12 @@
 <div class="overlay"
     x-show="imageUrl"
     @click="expression"@click="imageUrl=null">
-    <figure><img :src="imageUrl" alt="image 237... un chiot"></figure>
+    <figure>
+        <img :src="imageUrl" alt="image 237... un chiot"
+            @click="imageUrl= 'https://picsum.photos/id/237/400/300'">
+        <img :src="imageUrl" alt="image 237... un chiot"
+            @click="imageUrl= 'https://picsum.photos/id/237/400/300'">
+    </figure>
 </div>
 </body>
 </html>
