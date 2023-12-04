@@ -8,7 +8,7 @@
     <style>
 .overlay {
     /* Sit on top of the page content */
-    position: fixed;
+    position: absolute;
     /* Full width (cover the whole page) */
     width: 100vw;
     /* Full height (cover the whole page) */
@@ -86,7 +86,7 @@
 <p>lorem⇥</p>
 <div class="overlay"
     x-show="imageUrl"
-    @click="expression"@click="imageUrl=null">
+    @click="imageUrl=null">
     <figure>
         <img :src="imageUrl" alt="image 237... un chiot"
             @click="imageUrl= 'https://picsum.photos/id/237/400/300'">
