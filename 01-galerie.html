@@ -78,16 +78,19 @@
 
     </style>
 </head>
+
+
+
 <body x-data="{
     imageUrl:'https://picsum.photos/id/237/400/300'
 }" >
     <h1>Galerie</h1>
 <p>lorem⇥</p>
-<img :src="https://picsum.photos/id/237/60/60" 
+<img src="https://picsum.photos/id/237/60/60" alt="image 237... un chiot"
         @click="imageUrl= 'https://picsum.photos/id/237/400/300'"
         >
-<img :src="https://picsum.photos/id/237/60/60" 
-        @click="imageUrl= 'https://picsum.photos/id/237/400/300'">
+<img src="https://picsum.photos/id/238/60/60" alt="new york"
+        @click="imageUrl= 'https://picsum.photos/id/238/400/300'">
 <div class="overlay"
     x-show="imageUrl"
     @click="imageUrl=null"
