@@ -83,16 +83,17 @@
 }" >
     <h1>Galerie</h1>
 <p>lorem⇥</p>
+<img :src="https://picsum.photos/id/237/60/60" 
+        @click="imageUrl= 'https://picsum.photos/id/237/400/300'"
+        >
+<img :src="https://picsum.photos/id/237/60/60" 
+        @click="imageUrl= 'https://picsum.photos/id/237/400/300'">
 <div class="overlay"
     x-show="imageUrl"
     @click="imageUrl=null"
     @keyup.escape.window="imageUrl = null">
     <figure>
-        <img :src="imageUrl" alt="image 237... un chiot"
-            @click="imageUrl= 'https://picsum.photos/id/237/400/300'">
-        <img :src="imageUrl" alt="image 237... un chiot"
-            @click="imageUrl= 'https://picsum.photos/id/237/400/300'">
-    </figure>
+        <img :src="imageUrl" alt="image 237... un chiot"></figure>
 </div>
 </body>
 </html>
