@@ -75,6 +75,20 @@
     /* Height auto for keeping the ratio */
     height: auto;
 }
+.img{
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 10
+    }
+
+.titre{
+    background-color: black;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
 
     </style>
 </head>
@@ -82,15 +96,50 @@
 
 
 <body x-data="{
-    imageUrl:'https://picsum.photos/id/237/400/300'
+    imageUrl:'https://picsum.photos/id/56/400/300'
 }" >
-    <h1>Galerie</h1>
-<p>lorem⇥</p>
-<img src="https://picsum.photos/id/237/60/60" alt="image 237... un chiot"
-        @click="imageUrl= 'https://picsum.photos/id/237/400/300'"
+    <h1 class="titre">Galerie</h1>
+<p>Bienvenue dans notre espace dédié à l'art visuel, où l'esthétique rencontre la diversité. Notre galerie en ligne offre une expérience immersive conçue pour célébrer et partager la créativité sous toutes ses formes.</p>
+<img 
+class="img"
+src="https://picsum.photos/id/56/60/60" alt="pont"
+        @click="imageUrl= 'https://picsum.photos/id/56/400/300'"
         >
-<img src="https://picsum.photos/id/238/60/60" alt="new york"
-        @click="imageUrl= 'https://picsum.photos/id/238/400/300'">
+<img 
+class="img"
+src="https://picsum.photos/id/120/60/60" alt="nuit"
+        @click="imageUrl= 'https://picsum.photos/id/120/400/300'">
+        
+<img
+class="img"
+src="https://picsum.photos/id/235/60/60" alt="montagne"
+        @click="imageUrl= 'https://picsum.photos/id/235/400/300'"
+        >
+<img 
+class="img"
+src="https://picsum.photos/id/220/60/60" alt="gare"
+        @click="imageUrl= 'https://picsum.photos/id/220/400/300'">
+
+<img 
+class="img"
+src="https://picsum.photos/id/50/60/60" alt="pont"
+        @click="imageUrl= 'https://picsum.photos/id/50/400/300'"
+                >
+<img 
+class="img"
+src="https://picsum.photos/id/67/60/60" alt="nuit"
+        @click="imageUrl= 'https://picsum.photos/id/67/400/300'">
+                
+<img
+class="img"
+src="https://picsum.photos/id/16/60/60" alt="montagne"
+        @click="imageUrl= 'https://picsum.photos/id/16/400/300'"
+                >
+<img 
+class="img"
+src="https://picsum.photos/id/131/60/60" alt="gare"
+        @click="imageUrl= 'https://picsum.photos/id/131/400/300'">
+
 <div class="overlay"
     x-show="imageUrl"
     @click="imageUrl=null"
