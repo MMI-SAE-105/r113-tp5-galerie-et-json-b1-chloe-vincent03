@@ -82,12 +82,18 @@
     }
 
 .titre{
-    background-color: black;
     width: 100%;
     text-align: center;
-    color: white;
+    color: black;
     font-size: 50px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+.texte{
+    width: 100%;
+    text-align: left;
+    color: black;
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
 
     </style>
@@ -99,45 +105,45 @@
     imageUrl:'https://picsum.photos/id/56/400/300'
 }" >
     <h1 class="titre">Galerie</h1>
-<p>Bienvenue dans notre espace dédié à l'art visuel, où l'esthétique rencontre la diversité. Notre galerie en ligne offre une expérience immersive conçue pour célébrer et partager la créativité sous toutes ses formes.</p>
+<p class="texte">Bienvenue dans notre espace dédié à l'art visuel, où l'esthétique rencontre la diversité. Notre galerie en ligne offre une expérience immersive conçue pour célébrer et partager la créativité sous toutes ses formes.</p>
 <img 
 class="img"
-src="https://picsum.photos/id/56/60/60" alt="pont"
+src="https://picsum.photos/id/56/70/70" alt="pont"
         @click="imageUrl= 'https://picsum.photos/id/56/400/300'"
         >
 <img 
 class="img"
-src="https://picsum.photos/id/120/60/60" alt="nuit"
+src="https://picsum.photos/id/120/70/70" alt="nuit"
         @click="imageUrl= 'https://picsum.photos/id/120/400/300'">
         
 <img
 class="img"
-src="https://picsum.photos/id/235/60/60" alt="montagne"
+src="https://picsum.photos/id/235/70/70" alt="montagne"
         @click="imageUrl= 'https://picsum.photos/id/235/400/300'"
         >
 <img 
 class="img"
-src="https://picsum.photos/id/220/60/60" alt="gare"
+src="https://picsum.photos/id/220/70/70" alt="gare"
         @click="imageUrl= 'https://picsum.photos/id/220/400/300'">
 
 <img 
 class="img"
-src="https://picsum.photos/id/50/60/60" alt="pont"
+src="https://picsum.photos/id/50/70/70" alt="pont"
         @click="imageUrl= 'https://picsum.photos/id/50/400/300'"
                 >
 <img 
 class="img"
-src="https://picsum.photos/id/67/60/60" alt="nuit"
+src="https://picsum.photos/id/67/70/70" alt="nuit"
         @click="imageUrl= 'https://picsum.photos/id/67/400/300'">
                 
 <img
 class="img"
-src="https://picsum.photos/id/16/60/60" alt="montagne"
+src="https://picsum.photos/id/16/70/70" alt="montagne"
         @click="imageUrl= 'https://picsum.photos/id/16/400/300'"
                 >
 <img 
 class="img"
-src="https://picsum.photos/id/131/60/60" alt="gare"
+src="https://picsum.photos/id/131/70/70" alt="gare"
         @click="imageUrl= 'https://picsum.photos/id/131/400/300'">
 
 <div class="overlay"
