@@ -6,8 +6,24 @@
     <title>jason</title>
     <script src="//unpkg.com/alpinejs" defer></script>
 </head>
+<style>
+    .titre{
+        text-align: center;
+        color: black;
+        font-size: 50px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    }
+    ul{
+        text-align: left;
+        color: black;
+        font-size: 20px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    }
+    
+    
+</style>
 <body>
-    <h1>JSON</h1>
+    <h1 class="titre">JSON</h1>
     <ul x-data="{
         async données(){
             const resp=await fetch('data.json');
